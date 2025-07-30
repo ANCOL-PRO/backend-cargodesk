@@ -16,7 +16,11 @@ app.use('/api/data', dataRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/auctions', auctionsRoutes);
 
+// Ruta de prueba (muy importante para que Render detecte que el backend funciona)
+app.get('/', (req, res) => {
+  res.send('Servidor backend cargodesk activo');
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor backend corriendo en el puerto ${PORT}`);
 });
-
