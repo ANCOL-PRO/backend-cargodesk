@@ -17,5 +17,5 @@ app.use('/api/upload', uploadRoutes);
 app.use('/auctions', auctionsRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Servidor backend corriendo en puerto ${PORT}`);
+  console.log(`Servidor backend corriendo en http://localhost:${PORT}`);
 });
